@@ -1,0 +1,66 @@
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 41, reused 39, downloaded 0, added 0
+Progress: resolved 64, reused 42, downloaded 1, added 0
+Progress: resolved 163, reused 86, downloaded 14, added 0
+Progress: resolved 323, reused 177, downloaded 27, added 0
+Progress: resolved 546, reused 493, downloaded 29, added 0
+Progress: resolved 885, reused 837, downloaded 29, added 0
+ WARN  deprecated sane@4.1.0: some dependency vulnerabilities fixed, support for node < 10 dropped, and newer ECMAScript syntax/features added
+ WARN  deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+ WARN  deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+ WARN  deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+ WARN  deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+Progress: resolved 1242, reused 1207, downloaded 29, added 0
+ WARN  deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+ WARN  deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+ WARN  deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+ WARN  deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+ WARN  deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+Progress: resolved 1488, reused 1456, downloaded 29, added 0
+Packages: +61 -57
++++++++++++++++++++++++++++++++++++++++++---------------------------------------
+Progress: resolved 1488, reused 1456, downloaded 29, added 60
+.../node_modules/svelte-preprocess postinstall$ echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+.../node_modules/svelte-preprocess postinstall: [svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+.../node_modules/svelte-preprocess postinstall: Done
+Progress: resolved 1488, reused 1456, downloaded 30, added 61, done
+
+dependencies:
++ @storybook/addons 6.4.19
++ @storybook/client-api 6.4.19
++ @storybook/client-logger 6.4.19
++ @storybook/components 6.4.19
++ @storybook/core-events 6.4.19
++ @storybook/theming 6.4.19
++ react 16.14.0 (17.0.2 is available)
++ react-dom 16.14.0 (17.0.2 is available)
++ typescript 4.6.2
++ webpack 5.70.0
+
+devDependencies:
+- @storybook/addon-a11y 6.4.19
++ @storybook/addon-a11y 6.4.19
+- @storybook/addon-actions 6.4.19
++ @storybook/addon-actions 6.4.19
+- @storybook/addon-essentials 6.4.19
++ @storybook/addon-essentials 6.4.19
+- @storybook/addon-links 6.4.19
++ @storybook/addon-links 6.4.19
+- @storybook/addon-storysource 6.4.19
++ @storybook/addon-storysource 6.4.19
+- @storybook/addon-svelte-csf 1.1.0
++ @storybook/addon-svelte-csf 1.1.0
+- @storybook/svelte 6.4.19
++ @storybook/svelte 6.4.19
+- babel-loader 8.2.3
++ babel-loader 8.2.3
+- svelte-preprocess 4.10.4
++ svelte-preprocess 4.10.4
+
+ WARN  Issues with peer dependencies found
+.
+└─┬ @storybook/addon-svelte-csf
+  └── ✕ missing peer @storybook/api@^6.2.9
+Peer dependencies that should be installed:
+  @storybook/api@^6.2.9
+
