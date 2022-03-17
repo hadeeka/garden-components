@@ -21,7 +21,8 @@
         "format-fix": "prettier --write .",
         "prelint": "npm run format-fix",
         "lint": "eslint --ext .cjs,.js,.ts,.json,.svelte .",
-        "lint-fix": "eslint --fix --ext .cjs,.js,.ts,.json,.svelte ."
+        "lint-fix": "eslint --fix --ext .cjs,.js,.ts,.json,.svelte .",
+        "release": "changeset publish"
     },
     "devDependencies": {
         "@babel/core": "^7.16.7",
