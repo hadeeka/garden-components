@@ -1,8 +1,15 @@
 {
-    "name": "svelte-storybook-tailwind",
-    "author": "Jerric Lyns John",
+    "name": "@hadeeka/garden-components",
+    "author": "Mohab Mohamed",
     "license": "MIT",
-    "version": "0.0.3",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:hadeeka/garden-components.git"
+    },
+    "publishConfig": {
+        "@hadeeka:registry": "https://npm.pkg.github.com"
+    },
     "scripts": {
         "build": "rollup -c",
         "dev": "rollup -c -w",
