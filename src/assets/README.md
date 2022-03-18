@@ -1,0 +1,1 @@
+add cheatsheet of icons
