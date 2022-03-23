@@ -8,4 +8,4 @@ export * from './lib/organisms/dock/dock.svelte';
 export * from './lib/organisms/search-field/search-field.svelte';
 
 export * from './lib/templates/home-template/home-template.svelte';
-// write script to auto generate this file
+// todo: write script to auto generate this file
