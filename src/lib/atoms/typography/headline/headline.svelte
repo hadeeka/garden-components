@@ -1,5 +1,5 @@
 <script>
-    export let role = 'h1';
+    export let role = '';
     export let text = '';
 </script>
 
