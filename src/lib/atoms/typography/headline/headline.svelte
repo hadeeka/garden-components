@@ -1,11 +1,20 @@
 <script>
     export let role = 'h1';
+    export let text = '';
 </script>
 
 {#if 'h1' === role}
-    <h1>Headline 1</h1>
+    <h1>{text}</h1>
 {:else if 'h2' === role}
-    <h2>Headline 2</h2>
+    <h2>{text}</h2>
+{:else if 'h3' === role}
+    <h3>{text}</h3>
+{:else if 'h4' === role}
+    <h4>{text}</h4>
+{:else if 'h5' === role}
+    <h5>{text}</h5>
+{:else if 'h6' === role}
+    <h6>{text}</h6>
 {:else}
-    <h4>Default Case</h4>
+    <h6>{text}</h6>
 {/if}
