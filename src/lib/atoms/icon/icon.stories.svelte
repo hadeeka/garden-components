@@ -1,6 +1,7 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
     import {default as cloud} from '../../../assets/icons/cloud';
+    import {default as fox} from '../../../assets/icons/metamask/fox';
     import Icon from './icon.svelte';
 </script>
 
@@ -17,3 +18,4 @@
 <Story name="Default" args={{}} />
 
 <Story name="Cloud" args={{data: cloud}} />
+<Story name="Fox" args={{data: fox}} />
