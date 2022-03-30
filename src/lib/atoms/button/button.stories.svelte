@@ -15,4 +15,5 @@
 
 <!-- More on args: https://storybook.js.org/docs/svelte/writing-stories/args -->
 <Story name="Default" args={{}} />
-<Story name="Connect to Metamask" args={{icon: fox, label: 'Connect to Metamask', solid: false, metamask: true}} />
+<Story name="Solid w/ Label" args={{label: 'Solid Button'}} />
+<Story name="Outline w/ Label" args={{label: 'Outline Button', solid: false}} />
