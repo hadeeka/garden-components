@@ -4,7 +4,6 @@
     // required properties
     export let label = '';
     export let solid = true;
-    export let metamask = false;
 
     // optional properties
     export let icon = undefined;
@@ -14,7 +13,7 @@
     class={[
         'flex',
         'items-center',
-        'justify-between',
+        icon ? 'justify-between' : 'justify-center',
         'w-72',
         'px-12',
         'py-2',
