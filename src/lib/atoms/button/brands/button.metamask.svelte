@@ -1,13 +1,8 @@
 <script>
     import Icon from '../../icon/icon.svelte';
-
+    import {default as fox} from '../../../../assets/icons/metamask/fox';
     // required properties
     export let label = '';
-    export let solid = true;
-
-    // optional properties
-    export let icon = undefined;
-    export let metamask = undefined;
 </script>
 
 <button
@@ -25,9 +20,7 @@
         'hover:shadow'
     ].join(' ')}
 >
-    {#if icon}
-        <Icon data={icon} />
-    {/if}
+    <Icon data={fox} />
     {label.toLocaleUpperCase()}
 </button>
 
