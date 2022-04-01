@@ -1,13 +1,25 @@
 <script>
     import Icon from '../../atoms/icon/icon.svelte';
 
-    export let iconData;
-    export let iconScale;
+    export let data;
+    export let scale;
 
     //optional
     export let className = undefined;
 </script>
 
-<button class={['p-5 hover:bg-gray-100 rounded-lg', className].join(' ')}>
-    <Icon data={iconData} scale={iconScale} />
+<button
+    class={[
+        'flex',
+        'justify-center',
+        'items-center',
+        'bg-rose-600',
+        'rounded',
+        'hover:shadow',
+        'w-9',
+        'aspect-square',
+        className
+    ].join(' ')}
+>
+    <Icon class={['text-white'].join(' ')} {data} {scale} />
 </button>
