@@ -21,7 +21,7 @@
         'text-sm',
         solid ? 'text-stone-50' : 'text-rose-600',
         'rounded',
-        'hover:shadow-md'
+        'hover:shadow'
     ].join(' ')}
 >
     {#if icon}
