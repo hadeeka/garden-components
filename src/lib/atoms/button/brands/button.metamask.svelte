@@ -22,7 +22,7 @@
         'text-sm',
         'text-[#F89C35]',
         'rounded',
-        'hover:shadow-md'
+        'hover:shadow'
     ].join(' ')}
 >
     {#if icon}
