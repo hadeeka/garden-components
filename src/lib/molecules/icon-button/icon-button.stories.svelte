@@ -1,7 +1,7 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
     import IconButton from './icon-button.svelte';
-    import {default as cloud} from '../../../assets/icons/cloud';
+    import {default as plus} from '../../../assets/icons/plus';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
@@ -16,4 +16,4 @@
 <!-- More on args: https://storybook.js.org/docs/svelte/writing-stories/args -->
 <Story name="Default" args={{}} />
 
-<Story name="Cloud" args={{iconData: cloud}} />
+<Story name="Add" args={{data: plus, scale: 1.5}} />
