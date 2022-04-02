@@ -1,4 +1,4 @@
-name: Release
+name: Release and Build Storybook
 
 on:
     push:
@@ -11,32 +11,80 @@ jobs:
     release:
         name: Release
         runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [16]
         steps:
-            - name: Checkout Repo
-              uses: actions/checkout@v2
+            - uses: actions/checkout@v2
               with:
                   # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
                   fetch-depth: 0
+                  token: ${{ secrets.MASTER_KEY }}
 
-            - name: Setup Node.js 16.x
+            - uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: latest
+
+            - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v2
               with:
-                  node-version: 16.x
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'pnpm'
 
-            - name: Install Dependencies
+            - name: 'Setup pnpm authorization'
+              run: |
+                  pnpm set @hadeeka:registry=https://npm.pkg.github.com/
+                  pnpm set "//npm.pkg.github.com/:_authToken=${{ secrets.MASTER_KEY }}"
+
+            - name: Install dependencies
               run: pnpm install
 
             - name: Create Release Pull Request or Publish to npm
               id: changesets
               uses: changesets/action@v1
               with:
-                  # This expects you to have a script called release which does a build for your packages and calls changeset publish
                   publish: pnpm release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-            # - name: Send a Slack notification if a publish happens
-            #   if: steps.changesets.outputs.published == 'true'
-            #   # You can do something when a publish happens.
-            #   run: my-slack-bot send-notification --message "A new version of ${GITHUB_REPOSITORY} was published!"
+    # storybook:
+    #     needs: release
+    #     runs-on: ubuntu-latest
+
+    #     steps:
+    #         - uses: actions/checkout@v2
+    #           with:
+    #               # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+    #               fetch-depth: 0
+    #               token: ${{ secrets.GH_ACTION_TOKEN }}
+
+    #         - uses: pnpm/action-setup@v2.0.1
+    #           with:
+    #               version: latest
+
+    #         - name: Use Node.js ${{ matrix.node-version }}
+    #           uses: actions/setup-node@v2
+    #           with:
+    #               node-version: ${{ matrix.node-version }}
+    #               cache: 'pnpm'
+
+    #         - name: 'Setup pnpm authorization'
+    #           run: |
+    #               pnpm set @savvaslearning:registry=https://npm.pkg.github.com/
+    #               pnpm set "//npm.pkg.github.com/:_authToken=${{ secrets.GH_ACTION_TOKEN }}"
+
+    #         - name: Install dependencies
+    #           run: pnpm install
+
+    #         - name: Build
+    #           run: pnpm build
+
+    #         - name: Publish Storybook
+    #           uses: JamesIves/github-pages-deploy-action@4.1.5
+    #           with:
+    #               token: ${{ secrets.GITHUB_TOKEN }}
+    #               branch: gh-pages # The branch the action should deploy to.
+    #               folder: dist-storybook # The folder that the build-storybook script generates files.
+    #               CLEAN: true # Automatically remove deleted files from the deploy branch
