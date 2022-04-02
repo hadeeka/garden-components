@@ -1,5 +1,7 @@
-export const Variant = {
+const Variant = {
     SOLID: 'solid',
     OUTLINE: 'outline',
     TEXT: 'text'
 };
+
+export default Variant;

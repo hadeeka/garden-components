@@ -1,6 +1,8 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
     import IconButton from './icon-button.svelte';
+    import Variant from '../../../enumerations/variant';
+
     import {default as plus} from '../../../assets/icons/plus';
 </script>
 
@@ -16,4 +18,6 @@
 <!-- More on args: https://storybook.js.org/docs/svelte/writing-stories/args -->
 <Story name="Default" args={{}} />
 
-<Story name="Add" args={{data: plus, scale: 1.5}} />
+<Story name="Solid" args={{data: plus, scale: 1.5, variant: Variant.SOLID}} />
+<Story name="Outline" args={{data: plus, scale: 1.5, variant: Variant.OUTLINE}} />
+<Story name="Text" args={{data: plus, scale: 1.5, variant: Variant.TEXT}} />
