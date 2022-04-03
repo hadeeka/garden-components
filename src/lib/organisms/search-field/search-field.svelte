@@ -3,7 +3,7 @@
     import {default as star} from '../../../assets/icons/star';
 </script>
 
-<label class="relative block">
+<label class="relative flex justify-center items-center">
     <span class="sr-only">Search</span>
     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
         <Icon data={star} />
@@ -11,6 +11,7 @@
     <input
         class={[
             'placeholder:text-gray-400',
+            'placeholder:text-center',
             'block',
             'bg-gray-100',
             'w-full',
