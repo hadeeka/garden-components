@@ -1,12 +1,12 @@
 <script>
     import Icon from '../../atoms/icon/icon.svelte';
-    import {default as star} from '../../../assets/icons/star';
+    import {default as search} from '../../../assets/icons/search';
 </script>
 
-<label class="relative flex justify-center items-center">
+<label class="relative block">
     <span class="sr-only">Search</span>
-    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-        <Icon data={star} />
+    <span class="absolute inset-y-0 left-0 p-2">
+        <Icon data={search} scale={2} />
     </span>
     <input
         class={[
