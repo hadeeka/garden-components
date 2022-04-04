@@ -1,11 +1,12 @@
 <script>
-    import Icon from '../../atoms/icon';
+    import Icon from '../../atoms/icon/icon.svelte';
+    import {default as search} from '../../../assets/icons/search';
 </script>
 
 <label class="relative block">
     <span class="sr-only">Search</span>
     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-        <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+        <Icon data={search} />
     </span>
     <input
         class={[
