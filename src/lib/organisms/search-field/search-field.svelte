@@ -11,6 +11,7 @@
     <input
         class={[
             'placeholder:text-gray-400',
+            'placeholder:text-center',
             'block',
             'bg-gray-100',
             'w-full',
