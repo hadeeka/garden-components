@@ -5,12 +5,12 @@
 
 <label class="relative block">
     <span class="sr-only">Search</span>
-    <span class="absolute inset-y-0 left-0 p-2">
-        <Icon data={search} scale={2} />
+    <span class="absolute top-[0.45rem]  left-2">
+        <Icon class={['text-stone-600'].join(' ')} data={search} scale={1} />
     </span>
     <input
         class={[
-            'placeholder:text-gray-400',
+            'placeholder:text-stone-600',
             'placeholder:text-center',
             'block',
             'bg-gray-100',
