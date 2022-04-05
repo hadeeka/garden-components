@@ -5,8 +5,8 @@
 
 <label class="relative block">
     <span class="sr-only">Search</span>
-    <span class="absolute inset-y-0 left-0 p-2">
-        <Icon data={search} scale={2} />
+    <span class="absolute inset-y-2.5 left-0 p-2">
+        <Icon data={search} scale={1} />
     </span>
     <input
         class={[
