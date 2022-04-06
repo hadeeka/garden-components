@@ -1,1 +1,1 @@
-add cheatsheet of icons
+add html cheatsheet of icons
