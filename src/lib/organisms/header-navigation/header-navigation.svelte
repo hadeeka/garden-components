@@ -3,7 +3,7 @@
     import SearchField from '../search-field';
 </script>
 
-<div>
+<div class={['w-full', 'h-6', 'shadow-md'].join(' ')}>
     <IconButton />
     <SearchField />
     <IconButton />
