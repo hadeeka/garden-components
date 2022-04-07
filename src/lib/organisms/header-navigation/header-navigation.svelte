@@ -1,10 +1,11 @@
 <script>
-    import IconButton from '../../molecules/icon-button';
-    import SearchField from '../search-field';
+    import IconButton from '../../molecules/icon-button/icon-button.svelte';
+    import Variant from '../../../enumerations/variant';
+    import SearchField from '../search-field/search-field.svelte';
 </script>
 
-<div class={['w-full', 'h-6', 'shadow-md'].join(' ')}>
-    <IconButton />
+<div class={['flex', 'justify-evenly', 'items-center', 'w-full', 'h-16', 'shadow-md'].join(' ')}>
+    <IconButton variant={Variant.TEXT} />
     <SearchField />
-    <IconButton />
+    <IconButton variant={Variant.TEXT} />
 </div>
