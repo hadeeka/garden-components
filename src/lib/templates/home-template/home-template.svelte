@@ -7,7 +7,7 @@
     import {default as gear} from '../../../assets/icons/gear';
     import Dock from '../../organisms/dock/dock.svelte';
     import DisjointCloud from '../../organisms/disjoint-cloud/disjoint-cloud.svelte';
-    import SearchField from '../../organisms/search-field/search-field.svelte';
+    import SearchField from '../../molecules/search-field/search-field.svelte';
 
     const dockList = [{iconData: pie}, {iconData: calendar}, {iconData: cloud}, {iconData: list}, {iconData: gear}];
 </script>
