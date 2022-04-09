@@ -134,7 +134,7 @@
             invalidation // when this promise resolves, stop the simulation
         } = {}
     ) {
-        console.log('links', links);
+        // console.log('links', links);
         // Compute values.
         const N = d3.map(nodes, nodeId).map(intern);
         const LS = d3.map(links, linkSource).map(intern);
@@ -143,7 +143,7 @@
         const T = nodeTitle == null ? null : d3.map(nodes, nodeTitle);
         const L = nodeLabel == null ? null : d3.map(nodes, nodeLabel); //labels
         const P = nodeParent == null ? null : d3.map(nodes, nodeParent); //parents
-        console.log(L);
+        // console.log(L);
         const G = nodeGroup == null ? null : d3.map(nodes, nodeGroup).map(intern);
         const W = typeof linkStrokeWidth !== 'function' ? null : d3.map(links, linkStrokeWidth);
 
