@@ -3,16 +3,24 @@
     import {onMount} from 'svelte';
     import {Library} from '@observablehq/stdlib';
 
+    export let height;
+    export let width;
+
     let chartContainer;
 
     let observable = new Library();
 
-    onMount(() => {
-        const chart = ForceGraph();
-        console.log(observable);
-        console.log(chart);
-        chartContainer.appendChild(chart);
-    });
+    let chart;
+
+    $: if (width && height && chartContainer) {
+        chart = ForceGraph();
+        console.log(chart, chartContainer);
+        if (chartContainer.firstChild) {
+            chartContainer.replaceChild(chart, chartContainer.firstChild);
+        } else {
+            chartContainer.appendChild(chart);
+        }
+    }
 
     function ForceGraph() {
         const nodes = pack().leaves();
@@ -120,8 +128,6 @@
     let n = 200;
     let m = 10;
     let color = d3.scaleOrdinal(d3.range(m), d3.schemeCategory10);
-    let height = 600;
-    let width = 600;
     let data = {
         children: Array.from(
             d3.group(
@@ -170,4 +176,4 @@
     };
 </script>
 
-<div bind:this={chartContainer} />
+<div class={['w-full', 'h-full', 'flex'].join(' ')} bind:this={chartContainer} />
