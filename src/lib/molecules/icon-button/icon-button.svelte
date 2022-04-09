@@ -6,7 +6,7 @@
     export let scale;
     export let variant = Variant.SOLID;
 
-    console.log(Variant);
+    // console.log(Variant);
 
     //optional
     export let className = undefined;
