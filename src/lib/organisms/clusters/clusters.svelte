@@ -3,8 +3,8 @@
     import {onMount} from 'svelte';
     import {Library} from '@observablehq/stdlib';
 
-    export let height;
-    export let width;
+    let w;
+    let h;
 
     let chartContainer;
 
@@ -12,27 +12,37 @@
 
     let chart;
 
-    $: if (width && height && chartContainer) {
+    const resizeObserver = new ResizeObserver(entries => {
+        w = chartContainer.offsetWidth;
+        h = chartContainer.offsetHeight;
+        const contentRect = entries[0].contentRect;
+        if (contentRect) {
+            w = contentRect.width;
+            h = contentRect.height;
+        }
         chart = ForceGraph();
-        console.log(chart, chartContainer);
         if (chartContainer.firstChild) {
             chartContainer.replaceChild(chart, chartContainer.firstChild);
         } else {
             chartContainer.appendChild(chart);
         }
-    }
+    });
+
+    onMount(() => {
+        resizeObserver.observe(chartContainer);
+    });
 
     function ForceGraph() {
         const nodes = pack().leaves();
 
         const simulation = d3
             .forceSimulation(nodes)
-            .force('x', d3.forceX(width / 2).strength(0.01))
-            .force('y', d3.forceY(height / 2).strength(0.01))
+            .force('x', d3.forceX(w / 2).strength(0.01))
+            .force('y', d3.forceY(h / 2).strength(0.01))
             .force('cluster', forceCluster())
             .force('collide', forceCollide());
 
-        const svg = d3.select(observable.DOM.svg(width, height));
+        const svg = d3.select(observable.DOM.svg(w, h));
 
         const node = svg
             .append('g')
@@ -123,7 +133,7 @@
         return force;
     }
 
-    const pack = () => d3.pack().size([width, height]).padding(1)(d3.hierarchy(data).sum(d => d.value));
+    const pack = () => d3.pack().size([w, h]).padding(1)(d3.hierarchy(data).sum(d => d.value));
 
     let n = 200;
     let m = 10;
@@ -176,4 +186,9 @@
     };
 </script>
 
-<div class={['w-full', 'h-full', 'flex'].join(' ')} bind:this={chartContainer} />
+<div
+    bind:clientWidth={w}
+    bind:clientHeight={h}
+    bind:this={chartContainer}
+    class={['w-full', '', 'flex', 'grow', 'justify-center', 'items-center'].join(' ')}
+/>
