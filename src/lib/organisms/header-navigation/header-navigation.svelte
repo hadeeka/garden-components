@@ -7,7 +7,19 @@
     import {default as user} from '../../../assets/icons/user';
 </script>
 
-<div class={['flex', 'justify-between', 'items-center', 'w-full', 'h-16', 'shadow-md', 'p-3', 'bg-stone-50'].join(' ')}>
+<div
+    class={[
+        'flex',
+        'flex-none',
+        'justify-between',
+        'items-center',
+        'w-full',
+        'h-16',
+        'shadow-md',
+        'p-3',
+        'bg-stone-50'
+    ].join(' ')}
+>
     <IconButton variant={Variant.TEXT} data={bars} scale={1.25} />
     <div class={['w-2/3'].join(' ')}><SearchField /></div>
     <IconButton variant={Variant.TEXT} data={user} scale={1.25} />
