@@ -1,6 +1,7 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
     import SideMenu from './side-menu.svelte';
+    import Overlay from '../../atoms/overlay/overlay.svelte';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
@@ -9,6 +10,7 @@
 
 <!-- More on component templates: https://storybook.js.org/docs/svelte/writing-stories/introduction#using-args -->
 <Template let:args>
+    <Overlay />
     <SideMenu {...args} />
 </Template>
 
