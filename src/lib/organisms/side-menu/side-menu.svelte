@@ -9,7 +9,6 @@
     import {default as moonOutline} from '../../../assets/icons/moon-outline';
 </script>
 
-<Overlay />
 <div
     class={[
         'absolute',
