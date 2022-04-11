@@ -1,5 +1,4 @@
 <script>
-    import Overlay from '../../atoms/overlay/overlay.svelte';
     import Icon from '../../atoms/icon/icon.svelte';
 
     import {default as trash} from '../../../assets/icons/trash';
