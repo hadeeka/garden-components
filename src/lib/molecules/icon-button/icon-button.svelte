@@ -1,6 +1,7 @@
 <script>
     import Icon from '../../atoms/icon/icon.svelte';
     import Variant from '../../../enumerations/variant';
+    import {handleVariant} from '../../../utils/handle-variant';
 
     export let data;
     export let scale;
@@ -10,19 +11,6 @@
 
     //optional
     export let className = undefined;
-
-    const handleVariant = () => {
-        switch (variant) {
-            case Variant.SOLID:
-                return 'bg-rose-600 text-white';
-            case Variant.OUTLINE:
-                return 'bg-stone-50 border border-rose-600 text-rose-600';
-            case Variant.TEXT:
-                return 'bg-stone-50 text-rose-600';
-            default:
-                return 'bg-rose-600 text-white';
-        }
-    };
 </script>
 
 <button
@@ -30,7 +18,7 @@
         'flex',
         'justify-center',
         'items-center',
-        handleVariant(),
+        handleVariant(variant),
         'rounded',
         'hover:shadow',
         'w-9',
