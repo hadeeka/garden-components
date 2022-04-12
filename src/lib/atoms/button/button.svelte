@@ -1,12 +1,15 @@
 <script>
     import Icon from '../icon/icon.svelte';
+    import Variant from '../../../enumerations/variant';
+    import {handleVariant} from '../../../utils/handle-variant';
 
     // required properties
     export let label = '';
-    export let solid = true;
+    export let variant = Variant.SOLID;
 
     // optional properties
     export let icon = undefined;
+    export let width = 'full';
 </script>
 
 <button
@@ -14,12 +17,11 @@
         'flex',
         'items-center',
         icon ? 'justify-between' : 'justify-center',
-        'w-72',
+        `w-${width}`,
         'px-12',
-        'py-2',
-        solid ? 'bg-rose-600' : 'border border-rose-600',
+        'py-1.5',
+        handleVariant(variant),
         'text-sm',
-        solid ? 'text-stone-50' : 'text-rose-600',
         'rounded',
         'hover:shadow'
     ].join(' ')}
