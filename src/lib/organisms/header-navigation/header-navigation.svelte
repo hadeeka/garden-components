@@ -1,11 +1,13 @@
 <script>
     import Button from '../../atoms/button/button.svelte';
+    import Icon from '../../atoms/icon/icon.svelte';
     import IconButton from '../../molecules/icon-button/icon-button.svelte';
     import Variant from '../../../enumerations/variant';
     import SearchField from '../../molecules/search-field/search-field.svelte';
 
     import {default as bars} from '../../../assets/icons/bars';
     import {default as user} from '../../../assets/icons/user';
+    import {default as chevronRight} from '../../../assets/icons/chevron-right';
 
     let searchFocus = false;
 
@@ -30,5 +32,7 @@
             <IconButton variant={Variant.TEXT} data={user} scale={1.25} />
         {/if}
     </div>
-    <span>640:477 Intro to Probability > Homework 1</span>
+    <div class="flex flex-row items-center">
+        <span>640:477</span><Icon data={chevronRight} /> <span>Homework 1</span>
+    </div>
 </div>
