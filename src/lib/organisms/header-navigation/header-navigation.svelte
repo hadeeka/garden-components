@@ -20,8 +20,8 @@
     };
 </script>
 
-<div class="h-auto flex flex-col shadow-md bg-stone-50">
-    <div class={['flex', 'flex-none', 'justify-between', 'items-center', 'w-full', 'h-16', 'p-3'].join(' ')}>
+<div class="h-auto flex flex-col shadow-md bg-stone-50 p-3">
+    <div class={['flex', 'flex-none', 'justify-between', 'items-center', 'w-full', 'h-16'].join(' ')}>
         {#if !searchFocus}
             <IconButton variant={Variant.TEXT} data={bars} scale={1.25} />
         {/if}
