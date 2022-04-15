@@ -18,26 +18,17 @@
     };
 </script>
 
-<div
-    class={[
-        'flex',
-        'flex-none',
-        'justify-between',
-        'items-center',
-        'w-full',
-        'h-16',
-        'shadow-md',
-        'p-3',
-        'bg-stone-50'
-    ].join(' ')}
->
-    {#if !searchFocus}
-        <IconButton variant={Variant.TEXT} data={bars} scale={1.25} />
-    {/if}
-    <div class={[searchFocus ? 'w-full mr-1' : 'w-2/3'].join(' ')}>
-        <SearchField on:searchFieldFocus={handleSearchFieldFocus} on:searchFieldBlur={handleSearchFieldBlur} />
+<div class="h-auto flex flex-col shadow-md bg-stone-50">
+    <div class={['flex', 'flex-none', 'justify-between', 'items-center', 'w-full', 'h-16', 'p-3'].join(' ')}>
+        {#if !searchFocus}
+            <IconButton variant={Variant.TEXT} data={bars} scale={1.25} />
+        {/if}
+        <div class={[searchFocus ? 'w-full mr-1 flex flex-col' : 'w-2/3'].join(' ')}>
+            <SearchField on:searchFieldFocus={handleSearchFieldFocus} on:searchFieldBlur={handleSearchFieldBlur} />
+        </div>
+        {#if searchFocus}<Button width={'16'} label={'Cancel'} variant={Variant.TEXT} />{:else}
+            <IconButton variant={Variant.TEXT} data={user} scale={1.25} />
+        {/if}
     </div>
-    {#if searchFocus}<Button width={'16'} label={'Cancel'} variant={Variant.TEXT} />{:else}
-        <IconButton variant={Variant.TEXT} data={user} scale={1.25} />
-    {/if}
+    <span>640:477 Intro to Probability > Homework 1</span>
 </div>
