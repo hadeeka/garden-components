@@ -37,7 +37,7 @@
             'rounded-md',
             'py-1',
             'pl-9',
-            'pr-3',
+            'pr-8',
             'focus:outline-none',
             'focus:border-gray-400',
             'focus:ring-gray-400',

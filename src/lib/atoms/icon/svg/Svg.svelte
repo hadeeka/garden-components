@@ -17,12 +17,11 @@
     export let y = undefined;
     export let style = undefined;
     export let label = undefined;
-    export let color = undefined;
 </script>
 
 <svg
     version="1.1"
-    class={['fa-icon', color ? `fa-icon--${color}` : '', className].join(' ')}
+    class={['fa-icon', className].join(' ')}
     class:fa-spin={spin}
     class:fa-pulse={pulse}
     class:fa-inverse={inverse}

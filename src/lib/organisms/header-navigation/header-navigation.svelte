@@ -21,7 +21,7 @@
     };
 </script>
 
-<div class="h-auto flex flex-col shadow-md bg-stone-50 p-3 w-full">
+<div class={`h-auto flex flex-col shadow-md bg-stone-50 ${searchFocus ? 'p-3' : 'px-3'}  w-full`}>
     <div class={['flex', 'flex-none', 'justify-between', 'items-center', 'w-full', 'h-16'].join(' ')}>
         {#if !searchFocus}
             <IconButton variant={Variant.TEXT} data={bars} scale={1.25} />
@@ -33,11 +33,32 @@
             <IconButton variant={Variant.TEXT} data={user} scale={1.25} />
         {/if}
     </div>
-    <div class="flex justify-between items-center">
-        <div class="flex flex-row items-center">
-            <span class="mr-2">640:477</span><Icon data={chevronRight} scale={0.75} />
-            <span class="ml-2">Homework 1</span>
+    {#if searchFocus}
+        <div class="flex justify-between items-center">
+            <div class="flex flex-row items-center pt-3 pb-1.5 ">
+                <span class="text-sm font-medium">640:477 Intro to Probability</span><Icon
+                    class="mx-2"
+                    data={chevronRight}
+                    scale={0.66}
+                />
+                <span class="text-sm">Homework 1</span>
+            </div>
+            <Icon data={circle} class="text-red-300" scale={0.75} />
         </div>
-        <Icon data={circle} scale={0.75} />
-    </div>
+        <div class="flex justify-between items-center border-b border-b-stone-300">
+            <div class="flex flex-row items-center pt-1.5 pb-3">
+                <span class="text-sm font-medium">640:477 Intro to Probability</span><Icon
+                    class="mx-2"
+                    data={chevronRight}
+                    scale={0.66}
+                />
+                <span class="text-sm">Homework 2</span>
+            </div>
+            <Icon data={circle} class="text-red-300" scale={0.75} />
+        </div>
+        <div class="flex items-center pt-3">
+            <Icon data={circle} class="text-red-300" scale={2} />
+            <span class="ml-2 text-sm font-medium">640:477 Intro to Probability</span>
+        </div>
+    {/if}
 </div>
