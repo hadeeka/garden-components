@@ -33,6 +33,6 @@
         {/if}
     </div>
     <div class="flex flex-row items-center">
-        <span>640:477</span><Icon data={chevronRight} /> <span>Homework 1</span>
+        <span class="mr-1">640:477</span><Icon data={chevronRight} scale={0.75} /> <span class="ml-1">Homework 1</span>
     </div>
 </div>
