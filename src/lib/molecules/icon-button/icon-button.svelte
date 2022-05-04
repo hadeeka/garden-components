@@ -10,7 +10,8 @@
     // console.log(Variant);
 
     //optional
-    export let className = undefined;
+    let className = '';
+    export {className as class};
 </script>
 
 <button
