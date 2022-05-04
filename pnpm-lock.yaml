@@ -44,7 +44,7 @@ specifiers:
   sirv-cli: ^2.0.0
   stylelint: ^14.2.0
   stylelint-config-standard: ^24.0.0
-  svelte: ^3.46.4
+  svelte: ^3.48.0
   svelte-loader: ^3.1.2
   svelte-preprocess: ^4.10.1
   tailwindcss: ^3.0.15
@@ -61,17 +61,17 @@ devDependencies:
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.70.1
   '@storybook/addon-a11y': 6.4.19_react-dom@16.14.0+react@16.14.0
   '@storybook/addon-actions': 6.4.19_react-dom@16.14.0+react@16.14.0
-  '@storybook/addon-essentials': 6.4.19_8415e700dd7712e2737616cd50f302b6
+  '@storybook/addon-essentials': 6.4.19_5c511f3bbf7fae11d6900057352a611b
   '@storybook/addon-links': 6.4.19_react-dom@16.14.0+react@16.14.0
   '@storybook/addon-storysource': 6.4.19_react-dom@16.14.0+react@16.14.0
-  '@storybook/addon-svelte-csf': 1.1.0_7426589a8bf745bad0e5fcd0e410223c
+  '@storybook/addon-svelte-csf': 1.1.0_b9482cbd24bd11fd4d2db43e23e2c9be
   '@storybook/addons': 6.4.19_react-dom@16.14.0+react@16.14.0
   '@storybook/api': 6.4.19_react-dom@16.14.0+react@16.14.0
   '@storybook/client-api': 6.4.19_react-dom@16.14.0+react@16.14.0
   '@storybook/client-logger': 6.4.19
   '@storybook/components': 6.4.19_react-dom@16.14.0+react@16.14.0
   '@storybook/core-events': 6.4.19
-  '@storybook/svelte': 6.4.19_96256e05d3d2d6f2a4c570f8f0afdc79
+  '@storybook/svelte': 6.4.19_4190f0d64afc2c7f5011363103996b14
   '@storybook/theming': 6.4.19_react-dom@16.14.0+react@16.14.0
   '@types/fs-extra': 9.0.13
   autoprefixer: 10.4.4_postcss@8.4.12
@@ -80,26 +80,26 @@ devDependencies:
   eslint: 8.11.0
   eslint-config-prettier: 8.5.0_eslint@8.11.0
   eslint-plugin-json: 3.1.0
-  eslint-plugin-svelte3: 3.4.1_eslint@8.11.0+svelte@3.46.4
+  eslint-plugin-svelte3: 3.4.1_eslint@8.11.0+svelte@3.48.0
   fs-extra: 10.0.1
   postcss: 8.4.12
   postcss-cli: 9.1.0_postcss@8.4.12
   prettier: 2.6.0
-  prettier-plugin-svelte: 2.6.0_prettier@2.6.0+svelte@3.46.4
+  prettier-plugin-svelte: 2.6.0_prettier@2.6.0+svelte@3.48.0
   react: 16.14.0
   react-dom: 16.14.0_react@16.14.0
   rollup: 2.70.1
   rollup-plugin-css-only: 3.1.0_rollup@2.70.1
   rollup-plugin-livereload: 2.0.5
   rollup-plugin-postcss: 4.0.2_postcss@8.4.12
-  rollup-plugin-svelte: 7.1.0_rollup@2.70.1+svelte@3.46.4
+  rollup-plugin-svelte: 7.1.0_rollup@2.70.1+svelte@3.48.0
   rollup-plugin-terser: 7.0.2_rollup@2.70.1
   sirv-cli: 2.0.2
   stylelint: 14.6.0
   stylelint-config-standard: 24.0.0_stylelint@14.6.0
-  svelte: 3.46.4
-  svelte-loader: 3.1.2_svelte@3.46.4
-  svelte-preprocess: 4.10.4_25869ae158e9e3ec9473cb259e659295
+  svelte: 3.48.0
+  svelte-loader: 3.1.2_svelte@3.48.0
+  svelte-preprocess: 4.10.4_a11feb8080ed0474ce0df2f243466f27
   tailwindcss: 3.0.23_autoprefixer@10.4.4
   typescript: 4.6.2
   webpack: 5.70.0
@@ -2207,7 +2207,7 @@ packages:
       - webpack-command
     dev: true
 
-  /@storybook/addon-docs/6.4.19_bbaef30feffe2d4473d7ee432d234fde:
+  /@storybook/addon-docs/6.4.19_e792a8468e39ca9e408c10d8ecf5600c:
     resolution: {integrity: sha512-OEPyx/5ZXmZOPqIAWoPjlIP8Q/YfNjAmBosA8tmA8t5KCSiq/vpLcAvQhxqK6n0wk/B8Xp67Z8RpLfXjU8R3tw==}
     peerDependencies:
       '@storybook/angular': 6.4.19
@@ -2300,7 +2300,7 @@ packages:
       regenerator-runtime: 0.13.9
       remark-external-links: 8.0.0
       remark-slug: 6.1.0
-      svelte: 3.46.4
+      svelte: 3.48.0
       ts-dedent: 2.2.0
       util-deprecate: 1.0.2
       webpack: 5.70.0
@@ -2319,7 +2319,7 @@ packages:
       - webpack-command
     dev: true
 
-  /@storybook/addon-essentials/6.4.19_8415e700dd7712e2737616cd50f302b6:
+  /@storybook/addon-essentials/6.4.19_5c511f3bbf7fae11d6900057352a611b:
     resolution: {integrity: sha512-vbV8sjepMVEuwhTDBHjO3E6vXluG7RiEeozV1QVuS9lGhjQdvUPdZ9rDNUcP6WHhTdEkS/ffTMaGIy1v8oZd7g==}
     peerDependencies:
       '@babel/core': ^7.9.6
@@ -2348,7 +2348,7 @@ packages:
       '@storybook/addon-actions': 6.4.19_react-dom@16.14.0+react@16.14.0
       '@storybook/addon-backgrounds': 6.4.19_react-dom@16.14.0+react@16.14.0
       '@storybook/addon-controls': 6.4.19_93fd8d11f7f3d1a37058bea20086c430
-      '@storybook/addon-docs': 6.4.19_bbaef30feffe2d4473d7ee432d234fde
+      '@storybook/addon-docs': 6.4.19_e792a8468e39ca9e408c10d8ecf5600c
       '@storybook/addon-measure': 6.4.19_react-dom@16.14.0+react@16.14.0
       '@storybook/addon-outline': 6.4.19_react-dom@16.14.0+react@16.14.0
       '@storybook/addon-toolbars': 6.4.19_react-dom@16.14.0+react@16.14.0
@@ -2496,7 +2496,7 @@ packages:
       - '@types/react'
     dev: true
 
-  /@storybook/addon-svelte-csf/1.1.0_7426589a8bf745bad0e5fcd0e410223c:
+  /@storybook/addon-svelte-csf/1.1.0_b9482cbd24bd11fd4d2db43e23e2c9be:
     resolution: {integrity: sha512-AjP9kxVbbAyucB8vy889WERafjNM020vWel+psCuDJ2vLU+uObqbCLSGKRIznXjeL0BYR73l9ZF+niJfw6QSlg==}
     peerDependencies:
       '@storybook/addons': ^6.2.9
@@ -2525,12 +2525,12 @@ packages:
       '@storybook/client-logger': 6.4.19
       '@storybook/components': 6.4.19_react-dom@16.14.0+react@16.14.0
       '@storybook/core-events': 6.4.19
-      '@storybook/svelte': 6.4.19_96256e05d3d2d6f2a4c570f8f0afdc79
+      '@storybook/svelte': 6.4.19_4190f0d64afc2c7f5011363103996b14
       '@storybook/theming': 6.4.19_react-dom@16.14.0+react@16.14.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
-      svelte: 3.46.4
-      svelte-loader: 3.1.2_svelte@3.46.4
+      svelte: 3.48.0
+      svelte-loader: 3.1.2_svelte@3.48.0
       ts-dedent: 2.2.0
     dev: true
 
@@ -3293,7 +3293,7 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/svelte/6.4.19_96256e05d3d2d6f2a4c570f8f0afdc79:
+  /@storybook/svelte/6.4.19_4190f0d64afc2c7f5011363103996b14:
     resolution: {integrity: sha512-WG8aPur2aTt75jrXO8jkTiyJO/pwHdXWF54wVPKwye7Pl9LdRbkGWjuiUBNGjE4WYRkghDmRQfbXbbRfrdmhWg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -3314,8 +3314,8 @@ packages:
       react-dom: 16.14.0_react@16.14.0
       read-pkg-up: 7.0.1
       regenerator-runtime: 0.13.9
-      svelte: 3.46.4
-      svelte-loader: 3.1.2_svelte@3.46.4
+      svelte: 3.48.0
+      svelte-loader: 3.1.2_svelte@3.48.0
       sveltedoc-parser: 4.2.1
       ts-dedent: 2.2.0
     transitivePeerDependencies:
@@ -6303,7 +6303,7 @@ packages:
       vscode-json-languageservice: 4.2.0
     dev: true
 
-  /eslint-plugin-svelte3/3.4.1_eslint@8.11.0+svelte@3.46.4:
+  /eslint-plugin-svelte3/3.4.1_eslint@8.11.0+svelte@3.48.0:
     resolution: {integrity: sha512-7p59WG8qV8L6wLdl4d/c3mdjkgVglQCdv5XOTk/iNPBKXuuV+Q0eFP5Wa6iJd/G2M1qR3BkLPEzaANOqKAZczw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -6311,7 +6311,7 @@ packages:
       svelte: ^3.2.0
     dependencies:
       eslint: 8.11.0
-      svelte: 3.46.4
+      svelte: 3.48.0
     dev: true
 
   /eslint-scope/4.0.3:
@@ -10175,14 +10175,14 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte/2.6.0_prettier@2.6.0+svelte@3.46.4:
+  /prettier-plugin-svelte/2.6.0_prettier@2.6.0+svelte@3.48.0:
     resolution: {integrity: sha512-NPSRf6Y5rufRlBleok/pqg4+1FyGsL0zYhkYP6hnueeL1J/uCm3OfOZPsLX4zqD9VAdcXfyEL2PYqGv8ZoOSfA==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
     dependencies:
       prettier: 2.6.0
-      svelte: 3.46.4
+      svelte: 3.48.0
     dev: true
 
   /prettier/1.19.1:
@@ -10978,7 +10978,7 @@ packages:
       - ts-node
     dev: true
 
-  /rollup-plugin-svelte/7.1.0_rollup@2.70.1+svelte@3.46.4:
+  /rollup-plugin-svelte/7.1.0_rollup@2.70.1+svelte@3.48.0:
     resolution: {integrity: sha512-vopCUq3G+25sKjwF5VilIbiY6KCuMNHP1PFvx2Vr3REBNMDllKHFZN2B9jwwC+MqNc3UPKkjXnceLPEjTjXGXg==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -10988,7 +10988,7 @@ packages:
       require-relative: 0.8.7
       rollup: 2.70.1
       rollup-pluginutils: 2.8.2
-      svelte: 3.46.4
+      svelte: 3.48.0
     dev: true
 
   /rollup-plugin-terser/7.0.2_rollup@2.70.1:
@@ -11824,27 +11824,27 @@ packages:
     resolution: {integrity: sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=}
     dev: true
 
-  /svelte-hmr/0.14.11_svelte@3.46.4:
+  /svelte-hmr/0.14.11_svelte@3.48.0:
     resolution: {integrity: sha512-R9CVfX6DXxW1Kn45Jtmx+yUe+sPhrbYSUp7TkzbW0jI5fVPn6lsNG9NEs5dFg5qRhFNAoVdRw5qQDLALNKhwbQ==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     peerDependencies:
       svelte: '>=3.19.0'
     dependencies:
-      svelte: 3.46.4
+      svelte: 3.48.0
     dev: true
 
-  /svelte-loader/3.1.2_svelte@3.46.4:
+  /svelte-loader/3.1.2_svelte@3.48.0:
     resolution: {integrity: sha512-RhVIvitb+mtIwKNyvNQoDQ0EhXg2KH8LhQiiqeJh8u6vqJyGWoMoFcYCar69TT+1iaK5IYe0wPNYJ6TILcsurw==}
     peerDependencies:
       svelte: '>3.0.0'
     dependencies:
       loader-utils: 2.0.2
-      svelte: 3.46.4
+      svelte: 3.48.0
       svelte-dev-helper: 1.1.9
-      svelte-hmr: 0.14.11_svelte@3.46.4
+      svelte-hmr: 0.14.11_svelte@3.48.0
     dev: true
 
-  /svelte-preprocess/4.10.4_25869ae158e9e3ec9473cb259e659295:
+  /svelte-preprocess/4.10.4_a11feb8080ed0474ce0df2f243466f27:
     resolution: {integrity: sha512-fuwol0N4UoHsNQolLFbMqWivqcJ9N0vfWO9IuPAiX/5okfoGXURyJ6nECbuEIv0nU3M8Xe2I1ONNje2buk7l6A==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -11893,12 +11893,12 @@ packages:
       postcss: 8.4.12
       sorcery: 0.10.0
       strip-indent: 3.0.0
-      svelte: 3.46.4
+      svelte: 3.48.0
       typescript: 4.6.2
     dev: true
 
-  /svelte/3.46.4:
-    resolution: {integrity: sha512-qKJzw6DpA33CIa+C/rGp4AUdSfii0DOTCzj/2YpSKKayw5WGSS624Et9L1nU1k2OVRS9vaENQXp2CVZNU+xvIg==}
+  /svelte/3.48.0:
+    resolution: {integrity: sha512-fN2YRm/bGumvjUpu6yI3BpvZnpIm9I6A7HR4oUNYd7ggYyIwSA/BX7DJ+UXXffLp6XNcUijyLvttbPVCYa/3xQ==}
     engines: {node: '>= 8'}
     dev: true
 
