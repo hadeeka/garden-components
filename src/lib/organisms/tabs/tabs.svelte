@@ -35,7 +35,7 @@
             ><Icon class={['text-rose-600'].join(' ')} data={clock} /></a
         >
     </li>
-    <li class={['flex', 'w-1/4', 'h-full', 'justify-center', 'items-center'].join(' ')} on:click={handleSlide}>
+    <li class="flex w-1/4 h-full justify-center items-center" on:click={handleSlide}>
         <a href="#a" class={['w-full', 'h-full', 'flex', 'justify-center', 'items-center'].join(' ')} data-p="2"
             ><Icon class={['text-rose-600'].join(' ')} data={star} /></a
         >
