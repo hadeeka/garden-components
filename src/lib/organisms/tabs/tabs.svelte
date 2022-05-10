@@ -12,11 +12,7 @@
     };
 </script>
 
-<ul
-    class={['relative', 'flex', , 'flex-none', 'justify-between', 'items-center', 'w-full', 'h-16', 'shadow-md'].join(
-        ' '
-    )}
->
+<ul class="relative flex flex-none justify-between items-center w-full h-16 shadow-md">
     <div
         class={[
             'inline-block',
