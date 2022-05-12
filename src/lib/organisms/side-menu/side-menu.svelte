@@ -14,6 +14,7 @@
         'inset-0',
         'bg-stone-50',
         'w-5/6',
+        'h-full',
         'max-w-xs',
         'p-9',
         'z-20',
