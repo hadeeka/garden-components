@@ -1,7 +1,7 @@
 <script>
     import Button from '../../atoms/button/button.svelte';
     import Icon from '../../atoms/icon/icon.svelte';
-    import IconButton from '../../molecules/icon-button/icon-button.svelte';
+    import IconButton from '../../molecules/IconButton/IconButton';
     import Variant from '../../../enumerations/variant';
     import SearchField from '../../molecules/search-field/search-field.svelte';
 
@@ -9,8 +9,15 @@
     import {default as user} from '../../../assets/icons/user';
     import {default as circle} from '../../../assets/icons/circle';
     import {default as chevronRight} from '../../../assets/icons/chevron-right';
+    import {createEventDispatcher} from 'svelte';
 
     let searchFocus = false;
+
+    const dispatch = createEventDispatcher();
+
+    const handleMenuClick = () => {
+        dispatch('menuclick');
+    };
 
     const handleSearchFieldFocus = () => {
         searchFocus = true;
@@ -21,10 +28,10 @@
     };
 </script>
 
-<div class={`h-auto flex flex-col shadow-md bg-stone-50 ${searchFocus ? 'p-3' : 'px-3'}  w-full`}>
+<div class={`h-auto flex flex-col shadow-md bg-stone-50 ${searchFocus ? 'absolute p-3' : 'px-3'}  w-full`}>
     <div class={'flex flex-none justify-between items-center w-full h-16'}>
         {#if !searchFocus}
-            <IconButton variant={Variant.TEXT} data={bars} scale={1.25} />
+            <IconButton variant={Variant.TEXT} data={bars} scale={1.25} on:click={handleMenuClick} />
         {/if}
         <div class={[searchFocus ? 'w-full mr-1 flex flex-col' : 'w-2/3'].join(' ')}>
             <SearchField on:searchFieldFocus={handleSearchFieldFocus} on:searchFieldBlur={handleSearchFieldBlur} />

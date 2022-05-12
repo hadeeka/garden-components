@@ -15,6 +15,7 @@
 </script>
 
 <button
+    on:click
     class={[
         'flex',
         'justify-center',

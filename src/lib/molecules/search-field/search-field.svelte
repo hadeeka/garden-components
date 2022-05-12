@@ -1,6 +1,6 @@
 <script>
     import Icon from '../../atoms/icon/icon.svelte';
-    import IconButton from '../icon-button/icon-button.svelte';
+    import IconButton from '../IconButton/IconButton';
     import {default as search} from '../../../assets/icons/search';
     import {default as circleXMark} from '../../../assets/icons/circle-xmark';
     import {createEventDispatcher} from 'svelte';

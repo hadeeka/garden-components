@@ -13,6 +13,9 @@
     let chart;
 
     const resizeObserver = new ResizeObserver(entries => {
+        if (!chartContainer) {
+            return;
+        }
         w = chartContainer.offsetWidth;
         h = chartContainer.offsetHeight;
         const contentRect = entries[0].contentRect;
@@ -21,8 +24,9 @@
             h = contentRect.height;
         }
         chart = ForceGraph();
-        if (chartContainer.firstChild) {
-            chartContainer.replaceChild(chart, chartContainer.firstChild);
+        const existingChart = chartContainer.querySelector('svg');
+        if (existingChart) {
+            chartContainer.replaceChild(chart, existingChart);
         } else {
             chartContainer.appendChild(chart);
         }

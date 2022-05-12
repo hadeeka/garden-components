@@ -1,5 +1,5 @@
 <script>
-    import IconButton from '../../molecules/icon-button/icon-button.svelte';
+    import IconButton from '../../molecules/IconButton/IconButton.svelte';
     export let list = [];
 </script>
 

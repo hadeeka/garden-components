@@ -1,7 +1,7 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
     import SideMenu from './side-menu.svelte';
-    import Overlay from '../../atoms/overlay/overlay.svelte';
+    import Overlay from '../../atoms/Overlay/Overlay.svelte';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
