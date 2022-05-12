@@ -1,7 +1,7 @@
 export * from './lib/atoms/button/button.svelte';
 export * from './lib/atoms/icon/icon.svelte';
 
-export * from './lib/molecules/icon-button/icon-button.svelte';
+export * from './lib/molecules/IconButton/IconButton.svelte';
 export * from './lib/molecules/search-field/search-field.svelte';
 
 export * from './lib/organisms/disjoint-cloud/disjoint-cloud.svelte';
