@@ -3,6 +3,7 @@
     import Clusters from '../../organisms/clusters/clusters.svelte';
     import Tabs from '../../organisms/tabs/tabs.svelte';
     import SideMenu from '../../organisms/side-menu/side-menu.svelte';
+    import AddMenu from '../../organisms/AddMenu/AddMenu.svelte';
     import IconButton from '../../molecules/IconButton/IconButton.svelte';
     import Overlay from '../../atoms/Overlay/Overlay.svelte';
 
@@ -11,6 +12,7 @@
     import {default as plus} from '../../../assets/icons/plus';
 
     let sideMenu = false;
+    let addMenu = false;
 </script>
 
 <div class="h-full w-full flex flex-col justify-between items-center">
@@ -19,10 +21,20 @@
 
     <div class="relative w-full">
         <Tabs />
-        <IconButton class="absolute bottom-20 right-6" data={plus} scale={1.5} variant={Variant.SOLID} />
+        <IconButton
+            class="absolute bottom-20 right-6"
+            data={plus}
+            scale={1.5}
+            variant={Variant.SOLID}
+            on:click={() => (addMenu = true)}
+        />
     </div>
 </div>
 {#if sideMenu}
     <Overlay on:click={() => (sideMenu = false)} />
     <SideMenu />
+{/if}
+{#if addMenu}
+    <Overlay on:click={() => (addMenu = false)} />
+    <AddMenu />
 {/if}
