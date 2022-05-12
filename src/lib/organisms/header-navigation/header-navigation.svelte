@@ -22,7 +22,7 @@
 </script>
 
 <div class={`h-auto flex flex-col shadow-md bg-stone-50 ${searchFocus ? 'p-3' : 'px-3'}  w-full`}>
-    <div class={['flex', 'flex-none', 'justify-between', 'items-center', 'w-full', 'h-16'].join(' ')}>
+    <div class={'flex flex-none justify-between items-center w-full h-16'}>
         {#if !searchFocus}
             <IconButton variant={Variant.TEXT} data={bars} scale={1.25} />
         {/if}
@@ -35,7 +35,7 @@
     </div>
     {#if searchFocus}
         <div class="flex justify-between items-center">
-            <div class="flex flex-row items-center pt-3 pb-1.5 ">
+            <div class="flex flex-row items-center pt-3 pb-1.5">
                 <span class="text-sm font-medium">640:477 Intro to Probability</span><Icon
                     class="mx-2"
                     data={chevronRight}
