@@ -26,22 +26,22 @@
         ].join(' ')}
     />
     <li class="flex w-1/4 h-full justify-center items-center" on:click={handleSlide}>
-        <a href="#a" class={['w-full', 'h-full', 'flex', 'justify-center', 'items-center'].join(' ')} data-p="0"
+        <a href="#a" class="w-full h-full flex justify-center items-center" data-p="0"
             ><Icon class={['text-rose-600'].join(' ')} data={house} /></a
         >
     </li>
     <li class="flex w-1/4 h-full justify-center items-center" on:click={handleSlide}>
-        <a href="#a" class={['w-full', 'h-full', 'flex', 'justify-center', 'items-center'].join(' ')} data-p="1"
+        <a href="#a" class="w-full h-full flex justify-center items-center" data-p="1"
             ><Icon class={['text-rose-600'].join(' ')} data={clock} /></a
         >
     </li>
     <li class="flex w-1/4 h-full justify-center items-center" on:click={handleSlide}>
-        <a href="#a" class={['w-full', 'h-full', 'flex', 'justify-center', 'items-center'].join(' ')} data-p="2"
+        <a href="#a" class="w-full h-full flex justify-center items-center" data-p="2"
             ><Icon class={['text-rose-600'].join(' ')} data={star} /></a
         >
     </li>
     <li class="flex w-1/4 h-full justify-center items-center" on:click={handleSlide}>
-        <a href="#a" class={['w-full', 'h-full', 'flex', 'justify-center', 'items-center'].join(' ')} data-p="3"
+        <a href="#a" class="w-full h-full flex justify-center items-center" data-p="3"
             ><Icon class={['text-rose-600'].join(' ')} data={trash} /></a
         >
     </li>

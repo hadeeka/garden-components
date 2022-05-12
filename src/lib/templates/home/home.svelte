@@ -9,7 +9,7 @@
     import {default as plus} from '../../../assets/icons/plus';
 </script>
 
-<div class={['h-full', 'w-full', 'flex', 'flex-col', 'justify-between', 'items-center'].join(' ')}>
+<div class="h-full w-full flex flex-col justify-between items-center">
     <HeaderNavigation />
     <Clusters />
     <IconButton class="absolute bottom-20 right-6" data={plus} scale={1.5} variant={Variant.SOLID} />
