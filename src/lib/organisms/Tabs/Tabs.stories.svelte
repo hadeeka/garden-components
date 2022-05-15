@@ -1,17 +1,15 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
-    import SideMenu from './side-menu.svelte';
-    import Overlay from '../../atoms/Overlay/Overlay.svelte';
+    import Tabs from './Tabs.svelte';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
 <!-- More on argTypes: https://storybook.js.org/docs/svelte/api/argtypes -->
-<Meta title="Organisms/Side Menu" component={SideMenu} />
+<Meta title="Organisms/Tabs" component={Tabs} />
 
 <!-- More on component templates: https://storybook.js.org/docs/svelte/writing-stories/introduction#using-args -->
 <Template let:args>
-    <Overlay />
-    <SideMenu {...args} />
+    <Tabs {...args} />
 </Template>
 
 <!-- More on args: https://storybook.js.org/docs/svelte/writing-stories/args -->

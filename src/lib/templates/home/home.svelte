@@ -1,8 +1,8 @@
 <script>
     import HeaderNavigation from '../../organisms/header-navigation/header-navigation.svelte';
     import Clusters from '../../organisms/clusters/clusters.svelte';
-    import Tabs from '../../organisms/tabs/tabs.svelte';
-    import SideMenu from '../../organisms/side-menu/side-menu.svelte';
+    import Tabs from '../../organisms/Tabs/Tabs.svelte'''
+    import SideMenu from '../../organisms/SideMenu/SideMenu.svelte';
     import AddMenu from '../../organisms/AddMenu/AddMenu.svelte';
     import IconButton from '../../molecules/IconButton/IconButton.svelte';
     import Overlay from '../../atoms/Overlay/Overlay.svelte';
