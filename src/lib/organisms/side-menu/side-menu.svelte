@@ -8,21 +8,7 @@
     import {default as moonOutline} from '../../../assets/icons/moon-outline';
 </script>
 
-<div
-    class={[
-        'absolute',
-        'inset-0',
-        'bg-stone-50',
-        'w-5/6',
-        'h-full',
-        'max-w-xs',
-        'p-9',
-        'z-20',
-        'flex',
-        'flex-col',
-        'space-y-6'
-    ].join(' ')}
->
+<div class="absolute inset-0 bg-stone-50 w-5/6 h-full max-w-xs p-9 z-20 flex flex-col space-y-6">
     <div class={['flex', 'justify-between', 'items-center', 'text-rose-600'].join(' ')}>
         <a href="#a"
             ><span class={['text-xs', 'tracking-widest'].join(' ')}>HADEEKA</span>
@@ -32,25 +18,18 @@
     </div>
     <ul class={['text-rose-600', 'flex', 'flex-col', 'space-y-6', 'font-medium', 'text-sm'].join(' ')}>
         <li>
-            <a class={['flex', 'flex-row', 'items-center'].join(' ')} href="#a"
-                ><Icon data={trash} /><span class={['ml-2.5'].join(' ')}>TRASH</span></a
+            <a class="flex flex-row items-center" href="#a"><Icon data={trash} /><span class="ml-2.5">TRASH</span></a>
+        </li>
+        <li>
+            <a class="flex flex-row items-center" href="#a"><Icon data={gear} /><span class="ml-2.5">SETTINGS</span></a>
+        </li>
+        <li>
+            <a class="flex flex-row items-center" href="#a"
+                ><Icon data={circleQuestion} scale={0.875} /><span class="ml-2.5">HELP & FEEDBACK</span></a
             >
         </li>
         <li>
-            <a class={['flex', 'flex-row', 'items-center'].join(' ')} href="#a"
-                ><Icon data={gear} /><span class={['ml-2.5'].join(' ')}>SETTINGS</span></a
-            >
-        </li>
-        <li>
-            <a class={['flex', 'flex-row', 'items-center'].join(' ')} href="#a"
-                ><Icon data={circleQuestion} scale={0.875} /><span class={['ml-2.5'].join(' ')}>HELP & FEEDBACK</span
-                ></a
-            >
-        </li>
-        <li>
-            <a class={['flex', 'flex-row', 'items-center'].join(' ')} href="#a"
-                ><Icon data={box} /><span class={['ml-2.5'].join(' ')}>STORAGE</span></a
-            >
+            <a class="flex flex-row items-center" href="#a"><Icon data={box} /><span class="ml-2.5">STORAGE</span></a>
         </li>
     </ul>
 </div>
