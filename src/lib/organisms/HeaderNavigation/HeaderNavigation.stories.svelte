@@ -1,6 +1,6 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
-    import HeaderNav from './header-navigation.svelte';
+    import HeaderNav from './HeaderNavigation.svelte';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->

@@ -1,5 +1,5 @@
 <script>
-    import HeaderNavigation from '../../organisms/header-navigation/header-navigation.svelte';
+    import HeaderNavigation from '../../organisms/HeaderNavigation/HeaderNavigation.svelte';
     import Clusters from '../../organisms/clusters/clusters.svelte';
     import Tabs from '../../organisms/Tabs/Tabs.svelte'''
     import SideMenu from '../../organisms/SideMenu/SideMenu.svelte';
