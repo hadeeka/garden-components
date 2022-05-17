@@ -1,6 +1,6 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
-    import Clusters from './clusters.svelte';
+    import Clusters from './Clusters.svelte';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
