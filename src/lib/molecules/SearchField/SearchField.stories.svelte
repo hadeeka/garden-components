@@ -1,6 +1,6 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
-    import SearchField from './search-field.svelte';
+    import SearchField from './SearchField.svelte';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->

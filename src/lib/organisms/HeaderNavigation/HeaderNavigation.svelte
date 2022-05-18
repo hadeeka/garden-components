@@ -3,7 +3,7 @@
     import Icon from '../../atoms/icon/icon.svelte';
     import IconButton from '../../molecules/IconButton/IconButton';
     import Variant from '../../../enumerations/variant';
-    import SearchField from '../../molecules/search-field/search-field.svelte';
+    import SearchField from '../../molecules/SearchField/SearchField.svelte';
 
     import {default as bars} from '../../../assets/icons/bars';
     import {default as user} from '../../../assets/icons/user';
@@ -29,7 +29,7 @@
 </script>
 
 <div class={`h-auto flex flex-col shadow-md bg-stone-50 ${searchFocus ? 'absolute p-3' : 'px-3'}  w-full`}>
-    <div class={'flex flex-none justify-between items-center w-full h-16'}>
+    <div class="flex flex-none justify-between items-center w-full h-16">
         {#if !searchFocus}
             <IconButton variant={Variant.TEXT} data={bars} scale={1.25} on:click={handleMenuClick} />
         {/if}
