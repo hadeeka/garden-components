@@ -1,5 +1,5 @@
 <script>
-    import Button from '../../atoms/button/button.svelte';
+    import Button from '../../atoms/Button/Button.svelte';
     import Icon from '../../atoms/icon/icon.svelte';
     import IconButton from '../../molecules/IconButton/IconButton';
     import Variant from '../../../enumerations/variant';
