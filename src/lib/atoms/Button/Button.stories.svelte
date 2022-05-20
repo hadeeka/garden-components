@@ -1,7 +1,6 @@
 <script>
     import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
-    import Button from './button.svelte';
-    import {default as fox} from '../../../assets/icons/metamask/fox';
+    import Button from './Button.svelte';
 </script>
 
 <!-- More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export -->
