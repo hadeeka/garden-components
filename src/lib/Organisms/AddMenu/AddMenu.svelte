@@ -1,5 +1,5 @@
 <script>
-    import IconButton from '../../molecules/IconButton/IconButton.svelte';
+    import IconButton from '../../Molecules/IconButton/IconButton.svelte';
     import Variant from '../../../enumerations/variant';
 
     import {default as trash} from '../../../assets/icons/trash';

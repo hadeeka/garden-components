@@ -1,9 +1,9 @@
 <script>
-    import Button from '../../atoms/Button/Button.svelte';
-    import Icon from '../../atoms/icon/icon.svelte';
-    import IconButton from '../../molecules/IconButton/IconButton';
+    import Button from '../../Atoms/Button/Button.svelte';
+    import Icon from '../../Atoms/icon/icon.svelte';
+    import IconButton from '../../Molecules/IconButton/IconButton';
     import Variant from '../../../enumerations/variant';
-    import SearchField from '../../molecules/SearchField/SearchField.svelte';
+    import SearchField from '../../Molecules/SearchField/SearchField.svelte';
 
     import {default as bars} from '../../../assets/icons/bars';
     import {default as user} from '../../../assets/icons/user';

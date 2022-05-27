@@ -1,5 +1,5 @@
 <script>
-    import Icon from '../../atoms/icon/icon.svelte';
+    import Icon from '../../Atoms/icon/icon.svelte';
     import {default as house} from '../../../assets/icons/house';
     import {default as clock} from '../../../assets/icons/clock';
     import {default as star} from '../../../assets/icons/star';

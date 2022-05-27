@@ -1,11 +1,11 @@
 <script>
-    import HeaderNavigation from '../../organisms/HeaderNavigation/HeaderNavigation.svelte';
-    import Clusters from '../../organisms/Clusters/Clusters.svelte';
-    import Tabs from '../../organisms/Tabs/Tabs.svelte';
-    import SideMenu from '../../organisms/SideMenu/SideMenu.svelte';
-    import AddMenu from '../../organisms/AddMenu/AddMenu.svelte';
-    import IconButton from '../../molecules/IconButton/IconButton.svelte';
-    import Overlay from '../../atoms/Overlay/Overlay.svelte';
+    import HeaderNavigation from '../../Organisms/HeaderNavigation/HeaderNavigation.svelte';
+    import Clusters from '../../Organisms/Clusters/Clusters.svelte';
+    import Tabs from '../../Organisms/Tabs/Tabs.svelte';
+    import SideMenu from '../../Organisms/SideMenu/SideMenu.svelte';
+    import AddMenu from '../../Organisms/AddMenu/AddMenu.svelte';
+    import IconButton from '../../Molecules/IconButton/IconButton.svelte';
+    import Overlay from '../../Atoms/Overlay/Overlay.svelte';
 
     import Variant from '../../../enumerations/variant';
 

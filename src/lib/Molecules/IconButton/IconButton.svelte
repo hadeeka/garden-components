@@ -1,5 +1,5 @@
 <script>
-    import Icon from '../../atoms/icon/icon.svelte';
+    import Icon from '../../Atoms/icon/icon.svelte';
     import Variant from '../../../enumerations/variant';
     import {handleVariant} from '../../../utils/handle-variant';
 
