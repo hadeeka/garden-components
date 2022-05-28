@@ -1,11 +1,7 @@
-export * from './lib/atoms/button/button.svelte';
-export * from './lib/atoms/icon/icon.svelte';
+export * from './lib/Atoms/Button/Button.svelte';
+export * from './lib/Atoms/icon/icon.svelte';
 
-export * from './lib/molecules/IconButton/IconButton.svelte';
-export * from './lib/molecules/search-field/search-field.svelte';
+export * from './lib/Molecules/IconButton/IconButton.svelte';
+export * from './lib/Molecules/SearchField/SearchField.svelte';
 
-export * from './lib/organisms/disjoint-cloud/disjoint-cloud.svelte';
-export * from './lib/organisms/dock/dock.svelte';
-
-export * from './lib/templates/home-template/home-template.svelte';
 // todo: write script to auto generate this file
