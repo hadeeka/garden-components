@@ -1,7 +1,7 @@
 const Variant = {
-    SOLID: 'solid',
-    OUTLINE: 'outline',
-    TEXT: 'text'
+    SOLID: 's',
+    OUTLINE: 'o',
+    TEXT: 't'
 };
 
 export default Variant;
