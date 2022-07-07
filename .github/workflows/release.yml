@@ -49,42 +49,42 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-    # storybook:
-    #     needs: release
-    #     runs-on: ubuntu-latest
+    storybook:
+        needs: release
+        runs-on: ubuntu-latest
 
-    #     steps:
-    #         - uses: actions/checkout@v2
-    #           with:
-    #               # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
-    #               fetch-depth: 0
-    #               token: ${{ secrets.GH_ACTION_TOKEN }}
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+                  fetch-depth: 0
+                  token: ${{ secrets.GH_ACTION_TOKEN }}
 
-    #         - uses: pnpm/action-setup@v2.0.1
-    #           with:
-    #               version: latest
+            - uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: latest
 
-    #         - name: Use Node.js ${{ matrix.node-version }}
-    #           uses: actions/setup-node@v2
-    #           with:
-    #               node-version: ${{ matrix.node-version }}
-    #               cache: 'pnpm'
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'pnpm'
 
-    #         - name: 'Setup pnpm authorization'
-    #           run: |
-    #               pnpm set @savvaslearning:registry=https://npm.pkg.github.com/
-    #               pnpm set "//npm.pkg.github.com/:_authToken=${{ secrets.GH_ACTION_TOKEN }}"
+            - name: 'Setup pnpm authorization'
+              run: |
+                  pnpm set @hadeeka:registry=https://npm.pkg.github.com/
+                  pnpm set "//npm.pkg.github.com/:_authToken=${{ secrets.MASTER_KEY }}"
 
-    #         - name: Install dependencies
-    #           run: pnpm install
+            - name: Install dependencies
+              run: pnpm install
 
-    #         - name: Build
-    #           run: pnpm build
+            - name: Build
+              run: pnpm build
 
-    #         - name: Publish Storybook
-    #           uses: JamesIves/github-pages-deploy-action@4.1.5
-    #           with:
-    #               token: ${{ secrets.GITHUB_TOKEN }}
-    #               branch: gh-pages # The branch the action should deploy to.
-    #               folder: dist-storybook # The folder that the build-storybook script generates files.
-    #               CLEAN: true # Automatically remove deleted files from the deploy branch
+            - name: Publish Storybook
+              uses: JamesIves/github-pages-deploy-action@4.1.5
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  branch: gh-pages # The branch the action should deploy to.
+                  folder: storybook-static # The folder that the build-storybook script generates files.
+                  CLEAN: true # Automatically remove deleted files from the deploy branch
