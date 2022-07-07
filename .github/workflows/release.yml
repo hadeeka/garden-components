@@ -58,7 +58,7 @@ jobs:
               with:
                   # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
                   fetch-depth: 0
-                  token: ${{ secrets.GH_ACTION_TOKEN }}
+                  token: ${{ secrets.MASTER_KEY }}
 
             - uses: pnpm/action-setup@v2.0.1
               with:
